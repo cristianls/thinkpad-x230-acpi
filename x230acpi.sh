@@ -19,7 +19,7 @@ echo -e "event=button/volumedown VOLDN 00000080 00000000 K\naction=/usr/bin/amix
 
 sudo echo -e "event=button/volumeup VOLUP 00000080 00000000 K\naction=/usr/bin/amixer sset 'Master',0 2+" | sudo tee -a "$acpidir/thinkpad-volume-up"
 
-#sudo echo -e "event=button/mute MUTE 00000080 00000000 K\naction=/usr/bin/amixer sset 'Master',0 toggle" | sudo tee -a "$acpidir/thinkpad-volume-toggle"
+# sudo echo -e "event=button/mute MUTE 00000080 00000000 K\naction=/usr/bin/amixer sset 'Master',0 toggle" | sudo tee -a "$acpidir/thinkpad-volume-toggle"
 
 sudo echo -e "event=button/f20 F20 00000080 00000000 K\naction=/usr/bin/amixer sset 'Capture',0 toggle" | sudo tee -a "$acpidir/thinkpad-mic-mute"
 
